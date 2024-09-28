@@ -7,6 +7,8 @@
 /// </summary>
 internal class SelectionSort<T> : ISort<T> where T : IComparable<T>
 {
+    public string Name => "selection sort";
+
     public T[] Execute(T[] array)
     {
         ArgumentNullException.ThrowIfNull(array);
