@@ -8,6 +8,7 @@ internal class Program
     {
         ExecuteSort(new SelectionSort<int>(), GenerateIntArray(length: 10));
         ExecuteSort(new MergeSort<int>(), GenerateIntArray(length: 10));
+        ExecuteSort(new BubbleSort<int>(), GenerateIntArray(length: 10));
     }
 
     static void ExecuteSort<T>(ISort<T> sort, T[] array) where T : IComparable<T>
